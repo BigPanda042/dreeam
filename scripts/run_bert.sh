@@ -4,7 +4,7 @@ SEED=$3
 
 NAME=${TYPE}_lambda${LAMBDA}
 
-python run.py --do_train \
+python3 run.py --do_train \
 --data_dir dataset/docred \
 --transformer_type bert \
 --model_name_or_path bert-base-cased \

@@ -1,0 +1,66 @@
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertModel: ['cls.predictions.decoder.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+/home/steven/.local/lib/python3.8/site-packages/torch/cuda/__init__.py:145: UserWarning:
+NVIDIA GeForce RTX 3060 Ti with CUDA capability sm_86 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA GeForce RTX 3060 Ti GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+
+
+
+
+
+
+Loading examples: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3053/3053 [00:14<00:00, 206.65it/s]
+Loading examples:  25%|████████████████████████████████████████                                                                                                                           | 245/998 [00:00<00:02, 255.61it/s]
+# of documents 3053.
+# of positive examples 35615.
+
+Loading examples: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 998/998 [00:04<00:00, 212.70it/s]
+Train epoch:   0%|                                                                                                                                                                                    | 0/30 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "run.py", line 336, in <module>
+    main()
+  File "run.py", line 282, in main
+    train(args, model, train_features, dev_features)
+  File "run.py", line 123, in train
+    finetune(train_features, optimizer, args.num_train_epochs, num_steps)
+  File "run.py", line 58, in finetune
+    outputs = model(**inputs)
+  File "/home/steven/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/steven/Bachelorthesis/dreeam/model.py", line 220, in forward
+    sequence_output, attention = self.encode(input_ids, attention_mask)
+  File "/home/steven/Bachelorthesis/dreeam/model.py", line 66, in encode
+    sequence_output, attention = process_long_input(self.model, input_ids, attention_mask, start_tokens, end_tokens)
+  File "/home/steven/Bachelorthesis/dreeam/long_seq.py", line 28, in process_long_input
+    seq_len = attention_mask.sum(1).cpu().numpy().astype(np.int32).tolist()
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Traceback (most recent call last):
+  File "run.py", line 336, in <module>
+    main()
+  File "run.py", line 282, in main
+    train(args, model, train_features, dev_features)
+  File "run.py", line 123, in train
+    finetune(train_features, optimizer, args.num_train_epochs, num_steps)
+  File "run.py", line 58, in finetune
+    outputs = model(**inputs)
+  File "/home/steven/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/steven/Bachelorthesis/dreeam/model.py", line 220, in forward
+    sequence_output, attention = self.encode(input_ids, attention_mask)
+  File "/home/steven/Bachelorthesis/dreeam/model.py", line 66, in encode
+    sequence_output, attention = process_long_input(self.model, input_ids, attention_mask, start_tokens, end_tokens)
+  File "/home/steven/Bachelorthesis/dreeam/long_seq.py", line 28, in process_long_input
+    seq_len = attention_mask.sum(1).cpu().numpy().astype(np.int32).tolist()
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+# of documents 998.
+# of positive examples 11470.
+# of negative examples 384102.
+Total steps: 22890
+Warmup steps: 1373

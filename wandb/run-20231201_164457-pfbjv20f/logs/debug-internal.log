@@ -1,0 +1,213 @@
+2023-12-01 16:44:57,213 INFO    StreamThr :25268 [internal.py:wandb_internal():86] W&B internal server running at pid: 25268, started at: 2023-12-01 16:44:57.212932
+2023-12-01 16:44:57,213 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: status
+2023-12-01 16:44:57,215 INFO    WriterThread:25268 [datastore.py:open_for_write():85] open: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/run-pfbjv20f.wandb
+2023-12-01 16:44:57,215 DEBUG   SenderThread:25268 [sender.py:send():380] send: header
+2023-12-01 16:44:57,218 DEBUG   SenderThread:25268 [sender.py:send():380] send: run
+2023-12-01 16:44:57,746 INFO    SenderThread:25268 [dir_watcher.py:__init__():211] watching files in: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files
+2023-12-01 16:44:57,746 INFO    SenderThread:25268 [sender.py:_start_run_threads():1124] run started: pfbjv20f with start time 1701445497.212855
+2023-12-01 16:44:57,753 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: check_version
+2023-12-01 16:44:57,753 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: check_version
+2023-12-01 16:44:57,812 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: run_start
+2023-12-01 16:44:57,867 DEBUG   HandlerThread:25268 [system_info.py:__init__():32] System info init
+2023-12-01 16:44:57,867 DEBUG   HandlerThread:25268 [system_info.py:__init__():47] System info init done
+2023-12-01 16:44:57,867 INFO    HandlerThread:25268 [system_monitor.py:start():194] Starting system monitor
+2023-12-01 16:44:57,867 INFO    SystemMonitor:25268 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-01 16:44:57,867 INFO    HandlerThread:25268 [system_monitor.py:probe():214] Collecting system info
+2023-12-01 16:44:57,868 INFO    SystemMonitor:25268 [interfaces.py:start():190] Started cpu monitoring
+2023-12-01 16:44:57,868 INFO    SystemMonitor:25268 [interfaces.py:start():190] Started disk monitoring
+2023-12-01 16:44:57,869 INFO    SystemMonitor:25268 [interfaces.py:start():190] Started gpu monitoring
+2023-12-01 16:44:57,870 INFO    SystemMonitor:25268 [interfaces.py:start():190] Started memory monitoring
+2023-12-01 16:44:57,871 INFO    SystemMonitor:25268 [interfaces.py:start():190] Started network monitoring
+2023-12-01 16:44:57,890 DEBUG   HandlerThread:25268 [system_info.py:probe():196] Probing system
+2023-12-01 16:44:57,910 DEBUG   HandlerThread:25268 [system_info.py:_probe_git():181] Probing git
+2023-12-01 16:44:57,914 DEBUG   HandlerThread:25268 [system_info.py:_probe_git():189] Probing git done
+2023-12-01 16:44:57,914 DEBUG   HandlerThread:25268 [system_info.py:probe():244] Probing system done
+2023-12-01 16:44:57,914 DEBUG   HandlerThread:25268 [system_monitor.py:probe():223] {'os': 'Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2023-12-01T15:44:57.890778', 'startedAt': '2023-12-01T15:44:57.210531', 'docker': None, 'cuda': None, 'args': ('--do_train', '--data_dir', 'dataset/docred', '--transformer_type', 'bert', '--model_name_or_path', 'bert-base-cased', '--display_name', 'FirstTry_lambda0.1', '--save_path', 'FirstTry_lambda0.1', '--train_file', 'train_annotated.json', '--dev_file', 'dev.json', '--train_batch_size', '4', '--test_batch_size', '8', '--gradient_accumulation_steps', '1', '--num_labels', '4', '--lr_transformer', '5e-5', '--max_grad_norm', '1.0', '--evi_thresh', '0.2', '--evi_lambda', '0.1', '--warmup_ratio', '0.06', '--num_train_epochs', '30.0', '--seed', '671254', '--num_class', '97'), 'state': 'running', 'program': 'run.py', 'codePathLocal': 'run.py', 'codePath': 'run.py', 'git': {'remote': 'https://github.com/BigPanda042/dreeam.git', 'commit': 'cf820ae78c48746c1341011250c65b7271435b69'}, 'email': 'udfay@student.kit.edu', 'root': '/home/steven/Bachelorthesis/dreeam', 'host': 'DESKTOP-0I2TR05', 'username': 'steven', 'executable': '/usr/bin/python3', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3417.4719999999998, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}, {'current': 3417.472, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 250.92389297485352, 'used': 5.801700592041016}}, 'gpu': 'NVIDIA GeForce RTX 3060 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3060 Ti', 'memory_total': 8589934592}], 'memory': {'total': 5.786655426025391}}
+2023-12-01 16:44:57,914 INFO    HandlerThread:25268 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-01 16:44:57,914 INFO    HandlerThread:25268 [system_monitor.py:probe():227] Publishing system info
+2023-12-01 16:44:57,914 DEBUG   HandlerThread:25268 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-01 16:44:57,914 DEBUG   HandlerThread:25268 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-01 16:44:57,914 INFO    HandlerThread:25268 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-01 16:44:57,916 DEBUG   SenderThread:25268 [sender.py:send():380] send: files
+2023-12-01 16:44:57,916 INFO    SenderThread:25268 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-12-01 16:44:57,918 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-01 16:44:57,918 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: stop_status
+2023-12-01 16:44:57,919 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-01 16:44:58,197 DEBUG   SenderThread:25268 [sender.py:send():380] send: telemetry
+2023-12-01 16:44:58,554 INFO    wandb-upload_0:25268 [upload_job.py:push():131] Uploaded file /tmp/tmpk2smyaxfwandb/m42hudvt-wandb-metadata.json
+2023-12-01 16:44:58,746 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_created():271] file/dir created: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/requirements.txt
+2023-12-01 16:44:58,747 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_created():271] file/dir created: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/wandb-metadata.json
+2023-12-01 16:44:59,746 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_created():271] file/dir created: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:01,747 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:02,917 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: status_report
+2023-12-01 16:45:03,747 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:05,748 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:07,748 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:07,939 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: status_report
+2023-12-01 16:45:09,749 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:11,749 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:12,918 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-01 16:45:12,918 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: stop_status
+2023-12-01 16:45:12,919 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-01 16:45:13,082 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: status_report
+2023-12-01 16:45:13,750 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:15,750 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:17,750 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:18,345 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: status_report
+2023-12-01 16:45:19,751 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:21,751 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:23,436 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: status_report
+2023-12-01 16:45:23,752 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:25,752 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:27,753 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:27,919 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-01 16:45:27,919 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-01 16:45:27,919 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: stop_status
+2023-12-01 16:45:28,459 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: status_report
+2023-12-01 16:45:28,753 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/config.yaml
+2023-12-01 16:45:29,753 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:31,754 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:33,694 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: status_report
+2023-12-01 16:45:33,754 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:35,755 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:37,755 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:38,268 DEBUG   SenderThread:25268 [sender.py:send():380] send: exit
+2023-12-01 16:45:38,268 INFO    SenderThread:25268 [sender.py:send_exit():585] handling exit code: 1
+2023-12-01 16:45:38,268 INFO    SenderThread:25268 [sender.py:send_exit():587] handling runtime: 40
+2023-12-01 16:45:38,268 INFO    SenderThread:25268 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-01 16:45:38,268 INFO    SenderThread:25268 [sender.py:send_exit():593] send defer
+2023-12-01 16:45:38,268 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:38,268 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-01 16:45:38,268 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:38,268 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-12-01 16:45:38,268 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 1
+2023-12-01 16:45:38,268 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:38,268 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-01 16:45:38,269 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:38,269 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-12-01 16:45:38,269 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 2
+2023-12-01 16:45:38,269 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:38,269 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-01 16:45:38,269 INFO    HandlerThread:25268 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-01 16:45:38,269 DEBUG   SystemMonitor:25268 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-01 16:45:38,269 INFO    HandlerThread:25268 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-01 16:45:38,269 DEBUG   SystemMonitor:25268 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-01 16:45:38,269 INFO    HandlerThread:25268 [interfaces.py:finish():202] Joined disk monitor
+2023-12-01 16:45:38,269 DEBUG   SystemMonitor:25268 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-01 16:45:38,274 INFO    HandlerThread:25268 [interfaces.py:finish():202] Joined gpu monitor
+2023-12-01 16:45:38,274 INFO    HandlerThread:25268 [interfaces.py:finish():202] Joined memory monitor
+2023-12-01 16:45:38,274 INFO    HandlerThread:25268 [interfaces.py:finish():202] Joined network monitor
+2023-12-01 16:45:38,274 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:38,274 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-12-01 16:45:38,274 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 3
+2023-12-01 16:45:38,274 DEBUG   SenderThread:25268 [sender.py:send():380] send: stats
+2023-12-01 16:45:38,274 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:38,275 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-01 16:45:38,275 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:38,275 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-12-01 16:45:38,275 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 4
+2023-12-01 16:45:38,275 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:38,275 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-01 16:45:38,275 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:38,275 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-12-01 16:45:38,275 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 5
+2023-12-01 16:45:38,275 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:38,275 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-01 16:45:38,275 DEBUG   SenderThread:25268 [sender.py:send():380] send: summary
+2023-12-01 16:45:38,275 INFO    SenderThread:25268 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-12-01 16:45:38,276 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:38,276 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-12-01 16:45:38,276 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 6
+2023-12-01 16:45:38,276 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:38,276 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-01 16:45:38,276 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:38,276 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-12-01 16:45:38,276 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 7
+2023-12-01 16:45:38,276 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: status_report
+2023-12-01 16:45:38,276 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:38,276 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-01 16:45:38,276 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:38,276 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-12-01 16:45:38,755 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_created():271] file/dir created: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/wandb-summary.json
+2023-12-01 16:45:39,268 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-01 16:45:39,425 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 8
+2023-12-01 16:45:39,425 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: poll_exit
+2023-12-01 16:45:39,425 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:39,425 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-01 16:45:39,425 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:39,425 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-12-01 16:45:39,425 INFO    SenderThread:25268 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-01 16:45:39,425 INFO    SenderThread:25268 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-12-01 16:45:39,436 INFO    SenderThread:25268 [job_builder.py:build():404] adding wandb-job metadata file
+2023-12-01 16:45:39,440 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 9
+2023-12-01 16:45:39,441 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:39,441 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-01 16:45:39,441 DEBUG   SenderThread:25268 [sender.py:send():380] send: artifact
+2023-12-01 16:45:39,755 INFO    Thread-12 :25268 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:40,268 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-01 16:45:40,812 INFO    wandb-upload_1:25268 [upload_job.py:push():89] Uploaded file /home/steven/.local/share/wandb/artifacts/staging/tmp99vsqkkx
+2023-12-01 16:45:40,821 INFO    wandb-upload_0:25268 [upload_job.py:push():89] Uploaded file /home/steven/.local/share/wandb/artifacts/staging/tmpo1zjm7nk
+2023-12-01 16:45:42,184 INFO    SenderThread:25268 [sender.py:send_artifact():1458] sent artifact job-https___github.com_BigPanda042_dreeam.git_run.py - {'id': 'QXJ0aWZhY3Q6NjU0NjQxMTU0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyMDE1NjM2NQ==', 'latestArtifact': None}}
+2023-12-01 16:45:42,184 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:42,184 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-12-01 16:45:42,184 INFO    SenderThread:25268 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-01 16:45:42,756 INFO    SenderThread:25268 [dir_watcher.py:finish():388] scan: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files
+2023-12-01 16:45:42,757 INFO    SenderThread:25268 [dir_watcher.py:finish():402] scan save: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log output.log
+2023-12-01 16:45:42,757 INFO    SenderThread:25268 [dir_watcher.py:finish():402] scan save: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/config.yaml config.yaml
+2023-12-01 16:45:42,757 INFO    SenderThread:25268 [dir_watcher.py:finish():402] scan save: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/wandb-metadata.json wandb-metadata.json
+2023-12-01 16:45:42,757 INFO    SenderThread:25268 [dir_watcher.py:finish():402] scan save: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/requirements.txt requirements.txt
+2023-12-01 16:45:42,759 INFO    SenderThread:25268 [dir_watcher.py:finish():402] scan save: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/wandb-summary.json wandb-summary.json
+2023-12-01 16:45:42,761 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 10
+2023-12-01 16:45:42,761 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: poll_exit
+2023-12-01 16:45:42,763 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:42,763 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-01 16:45:42,765 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:42,765 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-12-01 16:45:42,765 INFO    SenderThread:25268 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-01 16:45:43,132 INFO    wandb-upload_0:25268 [upload_job.py:push():131] Uploaded file /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/config.yaml
+2023-12-01 16:45:43,176 INFO    wandb-upload_1:25268 [upload_job.py:push():131] Uploaded file /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/output.log
+2023-12-01 16:45:43,197 INFO    wandb-upload_2:25268 [upload_job.py:push():131] Uploaded file /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/requirements.txt
+2023-12-01 16:45:43,214 INFO    wandb-upload_3:25268 [upload_job.py:push():131] Uploaded file /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/files/wandb-summary.json
+2023-12-01 16:45:43,414 INFO    Thread-11 :25268 [sender.py:transition_state():613] send defer: 11
+2023-12-01 16:45:43,415 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:43,415 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-01 16:45:43,415 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:43,415 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-12-01 16:45:43,415 INFO    SenderThread:25268 [file_pusher.py:join():181] waiting for file pusher
+2023-12-01 16:45:43,415 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 12
+2023-12-01 16:45:43,415 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:43,415 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-01 16:45:43,416 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:43,416 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-12-01 16:45:43,416 INFO    SenderThread:25268 [file_stream.py:finish():595] file stream finish called
+2023-12-01 16:45:43,617 INFO    SenderThread:25268 [file_stream.py:finish():599] file stream finish is done
+2023-12-01 16:45:43,617 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 13
+2023-12-01 16:45:43,617 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:43,617 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-01 16:45:43,617 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:43,617 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-12-01 16:45:43,617 INFO    SenderThread:25268 [sender.py:transition_state():613] send defer: 14
+2023-12-01 16:45:43,617 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: defer
+2023-12-01 16:45:43,617 INFO    HandlerThread:25268 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-01 16:45:43,618 DEBUG   SenderThread:25268 [sender.py:send():380] send: final
+2023-12-01 16:45:43,618 DEBUG   SenderThread:25268 [sender.py:send():380] send: footer
+2023-12-01 16:45:43,618 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: defer
+2023-12-01 16:45:43,618 INFO    SenderThread:25268 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-12-01 16:45:43,618 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-01 16:45:43,619 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: server_info
+2023-12-01 16:45:43,619 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-01 16:45:43,620 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-01 16:45:43,620 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-01 16:45:43,620 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: poll_exit
+2023-12-01 16:45:43,620 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: server_info
+2023-12-01 16:45:43,621 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: job_info
+2023-12-01 16:45:43,779 DEBUG   SenderThread:25268 [sender.py:send_request():407] send_request: job_info
+2023-12-01 16:45:43,779 INFO    MainThread:25268 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2023-12-01 16:45:43,779 INFO    MainThread:25268 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2023-12-01 16:45:43,779 INFO    MainThread:25268 [wandb_run.py:_footer_sync_info():3719] logging synced files
+2023-12-01 16:45:43,779 DEBUG   HandlerThread:25268 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-01 16:45:43,780 INFO    HandlerThread:25268 [handler.py:finish():866] shutting down handler
+2023-12-01 16:45:44,622 INFO    WriterThread:25268 [datastore.py:close():294] close: /home/steven/Bachelorthesis/dreeam/wandb/run-20231201_164457-pfbjv20f/run-pfbjv20f.wandb
+2023-12-01 16:45:44,779 INFO    SenderThread:25268 [sender.py:finish():1536] shutting down sender
+2023-12-01 16:45:44,779 INFO    SenderThread:25268 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-01 16:45:44,779 INFO    SenderThread:25268 [file_pusher.py:join():181] waiting for file pusher
